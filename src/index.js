@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-//import App from "./App";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +10,9 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-
+/*
 class Person extends React.Component {
+  /*
   constructor(props){
     super(props);
     this.state = {
@@ -21,7 +22,7 @@ class Person extends React.Component {
 this.hendalClick = this.hendalClick.bind(this)
 
   }
-/*
+
   hendalClick(){
     this.setState({age:this.state.age + 1})
     this.setState({age:this.state.age + 1})
@@ -40,13 +41,22 @@ hendalClick(){
   this.setState((state)=>({age:state.age + 1}))
   +5
 }
-*/
+
 
 hendalClick(){
-  this.setState((state)=>({age:state.age + 1}),
+  this.setState((state)=>({age:this.state.age + 1}),
   ()=>{
     console.log(this.state)})
   
+}
+
+
+state ={
+  age : 28
+}
+
+hendalClick = () =>{
+  this.setState({age: this.state.age + 1})
 }
 
   render(){
@@ -75,3 +85,4 @@ const PersonList = () =>{
 }
 
 ReactDOM.render(<PersonList/>,document.getElementById('root'))
+*/
